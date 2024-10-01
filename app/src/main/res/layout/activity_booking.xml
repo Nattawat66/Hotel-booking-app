@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- ImageView สำหรับแสดงรูปโรงแรม -->
+
+            <ImageView
+                android:id="@+id/hotelImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="centerCrop" />
+
+            <Button
+                android:id="@+id/viewmore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ดูรูปภาพเพิ่มเติม" />
+
+            <!-- TextView สำหรับแสดงคำอธิบายโรงแรม -->
+            <TextView
+                android:id="@+id/hotelDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="16dp"
+                android:textStyle="bold"
+                android:text="คำอธิบายโรงแรม"
+                android:textSize="20sp" />
+
+
+            <!-- ฟอร์มกรอกข้อมูลลูกค้า -->
+            <EditText
+                android:id="@+id/customerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ชื่อผู้จอง" />
+
+            <EditText
+                android:id="@+id/checkInDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="เลือกวันที่เข้าพัก" />
+
+            <EditText
+                android:id="@+id/checkOutDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="เลือกวันที่ออกจากที่พัก" />
+
+
+            <Button
+                android:id="@+id/bookNowBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="จองโรงแรม" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
